@@ -22,7 +22,7 @@ public class LionTests {
     Feline feline;
 
     @Test
-    public void createLionThrowsException() throws Exception {
+    public void createLionThrowsExceptionTest() throws Exception {
         expectedEx.expect(Exception.class);
         expectedEx.expectMessage("Используйте допустимые значения пола животного - самец или самка");
 
@@ -30,7 +30,7 @@ public class LionTests {
     }
 
     @Test
-    public void getKittensIsCorrect() throws Exception{
+    public void getKittensIsCorrectTest() throws Exception{
         Lion lion = new Lion(feline, "Самец");
         int expectedCount = 5;
         Mockito.when(feline.getKittens()).thenReturn(expectedCount);
@@ -42,9 +42,9 @@ public class LionTests {
     }
 
     @Test
-    public void getFoodIsCorrect() throws Exception {
+    public void getFoodIsCorrectTest() throws Exception {
         Lion lion = new Lion(feline, "Самец");
-        List<String> expectedListOfFood = List.of("Пища");
+        List<String> expectedListOfFood = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(feline.eatMeat()).thenReturn(expectedListOfFood);
 
         MatcherAssert.assertThat("Некорректный список еды",

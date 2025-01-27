@@ -17,7 +17,7 @@ public class LionAlexTests {
     Feline feline;
 
     @Test
-    public void getKittensIsAlwaysZero() throws Exception{
+    public void getKittensIsAlwaysZeroTest() throws Exception{
         MatcherAssert.assertThat("У льва Алекса не может быть львят",
                 new LionAlex(feline).getKittens(),
                 equalTo(0)
@@ -25,7 +25,7 @@ public class LionAlexTests {
     }
 
     @Test
-    public void getPlaceOfLivingIsCorrect() throws Exception {
+    public void getPlaceOfLivingIsCorrectTest() throws Exception {
         MatcherAssert.assertThat("Лев Алекс живёт не там",
                 new LionAlex(feline).getPlaceOfLiving(),
                 equalTo("Нью-Йоркский зоопарк")
@@ -33,7 +33,7 @@ public class LionAlexTests {
     }
 
     @Test
-    public void getFriendsIsCorrect() throws Exception {
+    public void getFriendsIsCorrectTest() throws Exception {
         List<String> expectedList = List.of(
                 "Марти - зебра",
                 "Глория - бегемот",
