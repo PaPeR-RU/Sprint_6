@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.example.LionTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! - in com.example.LionTests
+getKittensIsCorrect(com.example.LionTests)  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: 
+Некорректное количество львят
+Expected: <5>
+     but: was <1>
+	at com.example.LionTests.getKittensIsCorrect(LionTests.java:38)
+
+getFoodIsCorrect(com.example.LionTests)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+Некорректный список еды
+Expected: <[Пища]>
+     but: was <[Животные, Птицы, Рыба]>
+	at com.example.LionTests.getFoodIsCorrect(LionTests.java:50)
+
+createLionThrowsException(com.example.LionTests)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Expected test to throw (an instance of java.lang.Exception and exception with message a string containing "Используйте допустимые значения пола животного - самец или самка")
+

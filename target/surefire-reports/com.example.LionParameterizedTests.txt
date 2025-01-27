@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.LionParameterizedTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.034 s <<< FAILURE! - in com.example.LionParameterizedTests
+doesHaveManeIsCorrect[Класс Lion. Пол: Самец](com.example.LionParameterizedTests)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: 
+Грива есть только у льва
+Expected: <true>
+     but: was <false>
+	at com.example.LionParameterizedTests.doesHaveManeIsCorrect(LionParameterizedTests.java:40)
+
